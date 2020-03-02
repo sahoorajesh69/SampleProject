@@ -1,0 +1,42 @@
+#commands learned
+git --version #for version of the git
+git status # shows the status of the files
+git add #git adds the files to staging area
+git commit -m 'comment here' #commit the changes to local repo
+git log # shows all the logs of version history
+git push # pushes the changes to remote github repo
+git difftool HEAD #shows the difference in versions
+git clone https://github.com/pbelokar/test.git  #for cloning github repo on local computer.
+
+#reverting uncommit changes
+git --checkout --hungry.py #it will checkout the latest version of the file discarding the local changes.
+ 
+git revert 'commit id' #for reverting the commited changes
+
+git reset --hard 'commit id' # used for revert all the commits after this commit id. it will vanish from logs as well.
+
+
+#creating, merging and deleting branch
+$git branch # to display all the branches that we have in repository
+$ git branch thirsty # to create new branch with thirsty
+$ git checkout thirsty # to make the thirsty branch active
+$ git merge thirsty # it merges the thirsty into current branch
+$ git push --set-upstream origin thirsty # to push the new branch to git hub remote repository
+$ git checkout -b dummy # create a new branch dummy and checkout 
+$ git branch -d dummy # it will delete the branch with name dummy
+
+
+#HEAD
+HEAD is the reference to the most recent commit in the current branch
+$ git show HEAD # it will show the lastest commit information
+$ git difftool 97b3ea67261b75ddab9894e2aa2b954a19b54231 3eb9c0db0ac3d143e3ecdf1937609429c34bcd19 # it will show the difference between these two commits
+$ git difftool HEAD~2 HEAD~1 #it will show the difference between head-1 version and head-2 version
+
+#PULL REQUEST
+ pull request can be created in github on a github website
+ when a ouside person make changes to out code on his local computer and in order to merge those changes in to our code base he can create a pull request.
+
+
+
+
+
